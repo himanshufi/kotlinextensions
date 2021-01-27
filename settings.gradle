@@ -1,0 +1,3 @@
+include ':customktx'
+include ':app'
+rootProject.name = "KotlinktxApp"

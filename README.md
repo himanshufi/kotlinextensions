@@ -23,6 +23,10 @@ allprojects {
 
 Check out the extensions related to the `x`:
 
-when(x) {</br>
-  is `Activity` -> [here](https://github.com/himanshufi/kotlinextensions/blob/master/documentation/ActivityExtension.md)
-}
+<pre>
+
+when(x) {
+   is <b>Activity</b> -> <a href="https://github.com/himanshufi/kotlinextensions/blob/master/docs/ActivityExtension.md">here</a>
+} 
+
+</pre>

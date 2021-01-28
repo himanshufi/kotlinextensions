@@ -1,13 +1,13 @@
-## List of all the extensions which can be extended from a `View`.
+### List of all the extensions which can be extended from a `View`.
 
-### For changing the visibility state of a `View`.
+#### For changing the visibility state of a `View`.
 
-1. <b>`View.visible()`</b>
-2. <b>`View.invisible()`</b>
-3. <b>`View.gone()`</b>
+1. `View.visible()`
+2. `View.invisible()`
+3. `View.gone()`
 
-### For showing a `Snackbar`.
+#### For showing a `Snackbar`.
 
-1. <b>`View.showSmallSnackbar(text: String)`</b>
-2. <b>`View.showLongSnackbar(text: String)`</b>
-3. <b>`View.showIndefiniteSnackbar(text: String)`</b>
+1. `View.showSmallSnackbar(text: String)`
+2. `View.showLongSnackbar(text: String)`
+3. `View.showIndefiniteSnackbar(text: String)`

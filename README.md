@@ -26,7 +26,7 @@ Check out the extensions related to the `x`:
 <pre>
 
 when(x) {
-   is <b>Activity</b> -> <a href="https://github.com/himanshufi/kotlinextensions/blob/master/docs/ActivityExtension.md">here</a>
+   is <b>Activity</b> -> <a href="https://github.com/himanshufi/kotlinextensions/blob/master/docs/ActivityExtension.md">Click here</a>
 } 
 
 </pre>

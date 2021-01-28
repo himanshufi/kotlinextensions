@@ -21,4 +21,11 @@ allprojects {
 ```
 ## Documentation
 
-Check out the extensions related to an `Activity`, [here](https://github.com/himanshufi/kotlinextensions/blob/master/documentation/ActivityExtension.md)
+Check out the extensions related to the `x`:
+
+```
+when(x) {
+  Activity -> [here](https://github.com/himanshufi/kotlinextensions/blob/master/documentation/ActivityExtension.md)
+}
+
+```

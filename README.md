@@ -28,6 +28,7 @@ Check out the extensions related to the `x`:
 when(x) {
    is <b>Activity</b> -> <a href="https://github.com/himanshufi/kotlinextensions/blob/master/docs/ActivityExtensions.md">Click here</a>
    is <b>View</b> -> <a href="https://github.com/himanshufi/kotlinextensions/blob/master/docs/ViewExtensions.md">Click here</a>
+   is <b>Context</b> -> <a href="https://github.com/himanshufi/kotlinextensions/blob/master/docs/ContextExtensions.md">Click here</a>
 } 
 
 </pre>

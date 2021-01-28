@@ -23,9 +23,6 @@ allprojects {
 
 Check out the extensions related to the `x`:
 
-```
 when(x) {
-  Activity -> [here](https://github.com/himanshufi/kotlinextensions/blob/master/documentation/ActivityExtension.md)
+  is `Activity` -> [here](https://github.com/himanshufi/kotlinextensions/blob/master/documentation/ActivityExtension.md)
 }
-
-```

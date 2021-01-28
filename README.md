@@ -19,3 +19,6 @@ allprojects {
  implementation 'com.github.himanshufi:kotlinextensions:0.1'
 
 ```
+## Documentation
+
+Check out the extensions related to an `Activity`, [here](https://github.com/himanshufi/kotlinextensions/blob/master/documentation/ActivityExtension.md)

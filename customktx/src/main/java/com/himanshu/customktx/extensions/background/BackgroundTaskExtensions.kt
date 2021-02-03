@@ -8,7 +8,7 @@ import com.himanshu.customktx.utils.ControlledRunner
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
-suspend fun ViewModel.loadRequest(context:Context, block: suspend () -> Unit): Job {
+fun ViewModel.loadRequest(context:Context, block: suspend () -> Unit): Job {
     return viewModelScope.launch {
         try {
             block()

@@ -4,34 +4,41 @@ import android.view.View
 import com.google.android.material.snackbar.Snackbar
 
 /**
- * General views extensions.
+ * View's visibility extensions.
  */
 
 fun View.visible() {
-    visibility = View.VISIBLE
+    changeViewVisibility(View.VISIBLE)
 }
 
 fun View.gone() {
-    visibility = View.GONE
+    changeViewVisibility(View.GONE)
 }
 
 fun View.invisible() {
-    visibility = View.INVISIBLE
+    changeViewVisibility(View.INVISIBLE)
+}
+
+private fun View.changeViewVisibility(newState: Int) {
+    visibility = newState
 }
 
 /**
- * Snackbar extensions.
+ * Snackbar's extensions.
  */
 
 fun View.showSmallSnackbar(text: String) {
-    Snackbar.make(this, text, Snackbar.LENGTH_SHORT).show()
+    showSnackbar(text, Snackbar.LENGTH_SHORT)
 }
 
 fun View.showLongSnackbar(text: String) {
-    Snackbar.make(this, text, Snackbar.LENGTH_LONG).show()
+    showSnackbar(text, Snackbar.LENGTH_LONG)
 }
 
 fun View.showIndefiniteSnackbar(text: String) {
-    Snackbar.make(this, text, Snackbar.LENGTH_INDEFINITE).show()
+    showSnackbar(text, Snackbar.LENGTH_INDEFINITE)
 }
 
+private fun View.showSnackbar(text: String, duration: Int) {
+    Snackbar.make(this, text, duration).show()
+}

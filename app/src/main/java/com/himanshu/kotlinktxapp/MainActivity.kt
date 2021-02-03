@@ -11,9 +11,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Handler().postDelayed({
-            this.shouldFinishAndGoTo<MainActivity>()
-        }, 3000)
-
     }
 }

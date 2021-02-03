@@ -27,7 +27,7 @@ fun Activity.findAndSetTextInEditText(@IdRes id: Int, text: String) {
  * start an intent without any
  * extra Bundle().
  */
-inline fun <reified T: Activity> Activity.shouldGoTo() {
+inline fun <reified T> Activity.shouldGoTo() {
     makeAnIntent<T>()
 }
 
@@ -35,7 +35,7 @@ inline fun <reified T: Activity> Activity.shouldGoTo() {
  * `shouldFinishAndGoTo()` finishes the existing
  * `Activity` after the intent is fired.
  */
-inline fun <reified T: Activity> Activity.shouldFinishAndGoTo() {
+inline fun <reified T> Activity.shouldFinishAndGoTo() {
     makeAnIntent<T>()
     finishItOff()
 }
@@ -45,7 +45,7 @@ inline fun <reified T: Activity> Activity.shouldFinishAndGoTo() {
  * fire an intent with a
  * Bundle().
  */
-inline fun <reified T: Activity> Activity.shouldGoWithDataTo(key:String, bundle: Bundle) {
+inline fun <reified T> Activity.shouldGoWithDataTo(key:String, bundle: Bundle) {
     makeAnIntent<T>(key, bundle)
 }
 
@@ -54,15 +54,15 @@ inline fun <reified T: Activity> Activity.shouldGoWithDataTo(key:String, bundle:
  * finish the existing `Activity` after an
  * intent is fired with `Bundle`.
  */
-inline fun <reified T: Activity> Activity.shouldFinishAndGoWithDataTo(key:String, bundle: Bundle) {
+inline fun <reified T> Activity.shouldFinishAndGoWithDataTo(key:String, bundle: Bundle) {
     makeAnIntent<T>(key, bundle)
     finishItOff()
 }
 
 /**
- * Creates an intent.
+ * Creates an intent with an `Activity`.
  */
-inline fun <reified T: Activity> Activity.makeAnIntent(key:String? = null, bundle: Bundle? = null) {
+inline fun <reified T> Activity.makeAnIntent(key:String? = null, bundle: Bundle? = null) {
     val intent = Intent(this, T::class.java)
     intent.putExtra(key, bundle)
     startActivity(intent)

@@ -16,7 +16,7 @@ allprojects {
 ### Add this in app level gradle
 
 ```
- implementation 'com.github.himanshufi:kotlinextensions:0.1'
+ implementation 'com.github.himanshufi:kotlinextensions:0.2'
 
 ```
 ## Documentation
